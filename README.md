@@ -1,73 +1,65 @@
-Docker AI Environment
+# Docker AI Environment
 
-Este entorno Dockerizado te permite trabajar fácilmente con proyectos de Inteligencia Artificial usando Python (Anaconda), MySQL y MongoDB.
+This Dockerized environment allows you to easily work on Artificial Intelligence projects using Python (Anaconda), MySQL, and MongoDB.
 
-🚀 Características
+## 🚀 Features
 
-Contenedor Python con Anaconda: Incluye Jupyter Notebook, TensorFlow, PyTorch, Scikit-learn, Pandas, NumPy y más.
+- **Python Container with Anaconda:** Includes Jupyter Notebook, TensorFlow, PyTorch, Scikit-learn, Pandas, NumPy, and more.
+- **MySQL:** Relational database.
+- **MongoDB:** NoSQL database.
 
-MySQL: Base de datos relacional.
-
-MongoDB: Base de datos NoSQL.
-
-📁 Estructura
-
+## 📁 Structure
+```bash
 docker-ai-env/
 ├── docker-compose.yml
 ├── Dockerfile
 ├── .env
 ├── requirements.txt
 └── notebooks/
+```
+## ⚙️ Installation
 
-⚙️ Instalación
+Clone this repository and run:
 
-Clona este repositorio y ejecuta:
-
+```bash
 docker compose build
 docker compose up -d
+```
 
-Accede al entorno de Jupyter Notebook desde tu navegador:
-
+Access the Jupyter Notebook environment from your browser:
+```bash
 http://localhost:8888
+```
 
-🔑 Configuración
+## 🔑 Configuration
 
-Las variables de entorno se encuentran en el archivo .env. Ajústalas según tu necesidad:
+Environment variables are defined in the .env file. Adjust them as needed:
 
 MYSQL_ROOT_PASSWORD=rootpassword
 MYSQL_DATABASE=mydatabase
 MYSQL_USER=myuser
 MYSQL_PASSWORD=mypassword
 
-💡 Uso básico
+## 💡 Basic usage
 
-MySQL
+MySQL:
+- Host: localhost
+- Port: 3306
+- User: defined in .env
 
-Host: localhost
+MongoDB:
+- URI: mongodb://localhost:27017
 
-Puerto: 3306
+## 📖 Additional Documentation
 
-Usuario: definido en .env
+- Docker Compose: https://docs.docker.com/compose/
+- Anaconda Python: https://docs.anaconda.com/
 
-MongoDB
+## 👥 Authors <a name="authors"></a>
 
-URI: mongodb://localhost:27017
+👤 **Alvaro Iporre**
 
-🧹 Comandos útiles
+- GitHub: [@alvaroiporre](https://github.com/alvaroiporre)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/alvaroiporre)
 
-Detener servicios:
-
-docker compose down
-
-Limpiar Docker:
-
-docker system prune -a --volumes
-
-📖 Documentación adicional
-
-Docker Compose
-
-Anaconda Python
-
-¡Disfruta tu entorno de desarrollo listo para proyectos de IA!
-
+---
