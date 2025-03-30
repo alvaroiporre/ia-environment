@@ -1,0 +1,14 @@
+# Data Science / AI Libraries
+numpy
+pandas
+scikit-learn
+tensorflow
+torch
+matplotlib
+seaborn
+jupyterlab
+jupyter
+pymysql
+mysql-connector-python
+pymongo
+python-dotenv
