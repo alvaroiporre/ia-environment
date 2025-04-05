@@ -12,3 +12,4 @@ pymysql
 mysql-connector-python
 pymongo
 python-dotenv
+pyspark
